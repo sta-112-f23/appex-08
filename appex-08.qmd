@@ -1,0 +1,32 @@
+---
+title: "Appex 08"
+author: "Put your name here!"
+format: 
+  html:
+    self-contained: true
+editor: visual
+---
+
+```{r}
+#| label: load-packages
+#| message: false
+#| warning: false
+library(tidyverse)
+```
+
+```{r}
+#| label: load-data
+
+load("data.rds")
+
+```
+
+Change the `id` below to *your* id. To look up what your ID is go here and enter your email address: https://lucy.shinyapps.io/sta-112-f23-id-lookup/
+
+```{r}
+#| label: filter-data
+
+data_sample <- data |>
+  filter(id == 9) ## change this to your ID 
+
+```
